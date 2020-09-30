@@ -13,7 +13,7 @@ import javax.persistence.Id;
 public class Admin {
 
     @Id
-    private String Id;
+    private String adminId;
 
     /**
      * 管理员

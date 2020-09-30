@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class Major {
 
     @Id
-    private String id;
+    private String majorId;
 
     /**
      * 专业负责人
