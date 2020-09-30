@@ -8,9 +8,9 @@ import lombok.Getter;
 @Getter
 public enum UserTypeEnum {
 
-    USER_TYPE_STUDENT(1, "学生"),
-    USER_TYPE_CHARGE(2,"专业负责人"),
-    USER_TYPE_ADMIN(0,"管理员"),
+    USER_TYPE_STUDENT(1, "student"),
+    USER_TYPE_CHARGE(2,"charge"),
+    USER_TYPE_ADMIN(0,"admin"),
     ;
 
     private Integer code;
@@ -18,5 +18,14 @@ public enum UserTypeEnum {
     UserTypeEnum(Integer code, String msg){
         this.code = code;
         this.msg = msg;
+    }
+
+    public static UserTypeEnum getUserTypeEnum(Integer code){
+        for(UserTypeEnum u : UserTypeEnum.values()){
+            if(u.getCode().equals(code)){
+                return u;
+            }
+        }
+        return null;
     }
 }

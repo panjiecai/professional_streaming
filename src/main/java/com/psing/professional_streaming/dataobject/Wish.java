@@ -17,7 +17,7 @@ public class Wish {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Integer wishId;
 
     /**
      * 学号
