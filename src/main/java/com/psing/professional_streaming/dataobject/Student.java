@@ -29,7 +29,7 @@ public class Student {
     /**
      * 学院
      */
-    private String insititute;
+    private String institute;
 
     /**
      * 专业
